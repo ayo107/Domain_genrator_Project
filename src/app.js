@@ -6,13 +6,14 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  var btn = document.getElementById("boton");
-  btn.addEventListener("click", function() {
+  //write your code here
+  console.log("Hello Rigo from the console!");
+  const resul = document.getElementById("pulsador");
+  resul.addEventListener("click", function() {
     let pronoun = ["the", "our"];
     let adj = ["great", "big"];
     let noun = ["jogger", "racoon"];
     let ext = [".com", ".net", ".us", ".io"];
-
     let links = [];
 
     for (let i = 0; i < pronoun.length; i++) {
@@ -22,6 +23,7 @@ window.onload = function() {
             links = links + pronoun[i] + adj[j] + noun[k] + ext[l] + "<br>";
           }
     }
-    document.getElementById("respuesta").innerHTML = links;
+    console.log(links);
+    document.getElementById("enlaces").innerHTML = links;
   });
 };
